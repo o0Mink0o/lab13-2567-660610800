@@ -17,10 +17,10 @@ export default function MovieIdPage({ params }: movieIdPageParams) {
       className="d-flex justify-content-center gap-4 mx-auto my-3"
       style={{ width: "75%" }}
     >
-      <img src={selMovie.imgSrc} width="200" />
+      <img src={selMovie?.imgSrc} width="200" />
       <div>
         <p className="fw-bold fs-4">{selMovie.title}</p>
-        <p>{selMovie.detail}</p>
+        <p>{selMovie?.detail}</p>
         <span className="fw-bold fs-4 text-primary d-flex gap-1">
           <IconStar size={35} />
           {selMovie.rating}
